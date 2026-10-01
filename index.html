@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iklan Lezat & Segar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Navigasi -->
+  <header>
+    <div class="logo">Kuliner<span>Hits</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#menu">Menu Spesial</a></li>
+        <li><a href="#promo">Promo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="badge">Diskon 50% Hari Ini!</span>
+      <h1>Sensasi Lezat & Segar Dalam Setiap Gigitan</h1>
+      <p>Nikmati kombinasi burger premium yang juicy dan minuman boba segar yang memanjakan harimu.</p>
+      <button class="btn-cta" onclick="pesanSekarang()">Pesan Sekarang</button>
+    </div>
+
+    <!-- Container Gambar Animasi Floating -->
+    <div class="hero-images">
+      <div class="card-img floating-food">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Burger Premium">
+        <div class="tag">Burger Master</div>
+      </div>
+      <div class="card-img floating-drink">
+        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Es Boba Segar">
+        <div class="tag">Fresh Drink</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Menu Interaktif -->
+  <section id="menu" class="menu-section">
+    <h2>Menu Terfavorit</h2>
+    <div class="menu-grid">
+      
+      <!-- Card Makanan -->
+      <div class="menu-card">
+        <div class="card-badge">Makanan</div>
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Juicy Burger">
+        <h3>Juicy Beef Burger</h3>
+        <p>Daging sapi pilihan dengan keju meleleh dan saus rahasia.</p>
+        <div class="card-bottom">
+          <span class="price">Rp 35.000</span>
+          <button class="btn-order" onclick="tambahKeKeranjang('Juicy Beef Burger')">+</button>
+        </div>
+      </div>
+
+      <!-- Card Minuman -->
+      <div class="menu-card">
+        <div class="card-badge drink">Minuman</div>
+        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=80" alt="Mojito Fresh">
+        <h3>Tropical Mint Mojito</h3>
+        <p>Kesegaran daun mint alami dipadu soda dingin yang menyegarkan.</p>
+        <div class="card-bottom">
+          <span class="price">Rp 22.000</span>
+          <button class="btn-order" onclick="tambahKeKeranjang('Tropical Mint Mojito')">+</button>
+        </div>
+      </div>
+
+      <!-- Card Makanan 2 -->
+      <div class="menu-card">
+        <div class="card-badge">Makanan</div>
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=80" alt="Healthy Bowl">
+        <h3>Delicious Salad Bowl</h3>
+        <p>Sayuran segar organik dengan dressing wijen sangrai yang gurih.</p>
+        <div class="card-bottom">
+          <span class="price">Rp 28.000</span>
+          <button class="btn-order" onclick="tambahKeKeranjang('Delicious Salad Bowl')">+</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Pesanan berhasil ditambahkan!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
